@@ -2150,7 +2150,8 @@ body.dark .blog-page-section .blog-single {
 }
 
 .timeline.edu .timeline-container::after {
-  content: "";
+  content: url('https://api.iconify.design/simple-line-icons:graduation.svg?color=%23FF4C60&width=24px&height=24px');
+vertical-align: -0.062em;
   background: #FFF;
   font-family: "simple-line-icons";
   font-size: 24px;
@@ -2162,7 +2163,8 @@ body.dark .blog-page-section .blog-single {
 }
 
 .timeline.exp .timeline-container::after {
-  content: "";
+  content: url('https://api.iconify.design/simple-line-icons:briefcase.svg?color=%23FF4C60&width=24px&height=24px');
+vertical-align: -0.062em;
   background: #FFF;
   font-family: "simple-line-icons";
   font-size: 24px;
