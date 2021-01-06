@@ -24,3 +24,7 @@ h6.sub-title{
 ul.tasks-responsibilties{
     margin-left: 50px;
 }
+
+img.project-image-big{
+    border-radius: 25px;
+}
