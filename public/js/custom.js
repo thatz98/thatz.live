@@ -392,9 +392,16 @@ $(function(){
 
 });
 
-$(document).ready(function($){
-  $("#show-more-btn").click(function(e){
-    $(".show-more-item:hidden").slice(0,6).fadeIn();
-    if ($(".show-more-item:hidden").length < 1) $(this).fadeOut();
-  })
-})
+$( document ).ready(function () {
+  $(".show-more-item").slice(0, 6).show();
+    if ($(".show-more-item:hidden").length != 0) {
+      $("#loadMore").show();
+    }   
+    $("#loadMore").on('click', function (e) {
+      e.preventDefault();
+      $(".show-more-item:hidden").slice(0, 6).slideDown();
+      if ($(".show-more-item:hidden").length == 0) {
+        $("#loadMore").fadeOut('slow');
+      }
+    });
+  });
